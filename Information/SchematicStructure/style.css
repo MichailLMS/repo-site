@@ -1,0 +1,575 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: #fff;
+  color: #222;
+}
+
+.page-wrapper {
+  background: #fff;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.contact-info a {
+  color: #006600;
+  text-decoration: none;
+}
+
+.navbar {
+  background: #006600;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  padding: 10px 0;
+}
+
+/* Стиль ссылок верхнего меню */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+}
+
+/* При наведении верхняя кнопка — белая, текст черный */
+.menu a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+
+/* === Выпадающее меню === */
+.menu li {
+  position: relative;
+}
+
+/* Подсветка при наведении на сам пункт меню */
+.menu li:hover > a {
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+
+
+/* Подменю */
+.submenu {
+  display: block;
+  position: absolute;
+  top: 156%;
+  left: 0;
+  background: #fff; /* Белый фон */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+
+  /* Скрываем по умолчанию */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+/* Элементы подменю */
+.submenu li {
+  border-bottom: 1px solid #eee;
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.menu .submenu li a:hover {
+  color: #006600;
+}
+
+/* Ссылки в подменю */
+.submenu a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Наведение на пункт подменю */
+.submenu a:hover {
+  background: #f0f0f0;
+  color: #006600;
+}
+
+/* Показываем подменю при наведении */
+.dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* плавное появление снизу */
+}
+
+/* Небольшая плавность для появления */
+.dropdown .submenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+.breadcrumbs {
+  margin: 0 0 30px 0; 
+  width: 100%;
+  max-width: 1200px;
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* расстояние между элементами */
+  flex-wrap: wrap; /* разрешаем перенос элементов */
+}
+
+.breadcrumbs a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover { /* hover когда наводишь на элемент */
+  /* text-decoration: underline; none подчеркивание при наведении*/ 
+  color: green;
+}
+
+.breadcrumbs span {
+  color: #444;
+}
+
+
+
+
+
+
+
+
+.hero {
+  background: url('img/placeholder.png') center/cover no-repeat;
+  padding: 80px 0;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000000;
+  color: #006600;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.content-box {
+  margin: 40px 0;
+  padding: 30px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
+
+h2 {
+  color: #006600;
+  margin-bottom: 20px;
+  font-size: 28px
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #006600;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: #006600;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* Контент и боковая колонка */
+.content-wrapper {
+display: flex;
+gap: 30px;
+margin-top: 40px;
+}
+
+/* Основной текст */
+.main-article {
+flex: 3;
+background: #fff;
+padding: 1px;
+border-radius: 6px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Image QR-code */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+img {
+  max-width: 100%; /* Ограничиваем ширину до 80% от родительского контейнера */
+  height: auto; /* Сохраняем пропорции изображения */
+}
+
+
+
+/* Правая колонка */
+.sidebar {
+flex: 1.2;
+}
+
+/* Меню справа */
+.side-menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+background: #fff;
+border-radius: 6px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.side-menu li {
+border-bottom: none; /* 1px solid #eee; */
+}
+
+.side-menu li:last-child {
+border-bottom: none;
+}
+
+.side-menu a {
+display: block;
+padding: 6px 16px;
+text-decoration: none;
+color: #222;
+transition: 0.3s;
+}
+
+.side-menu a:hover {
+/* background-color: #006600;*/
+color: green;
+box-shadow: 0 0 6px rgba(0,0,0,0.15);
+/* transform: translateY(-2px);  лёгкое “поднятие” */
+}
+
+/* Для телефонов — колонки одна под другой */
+@media (max-width: 900px) {
+.content-wrapper {
+flex-direction: column;
+}
+}
+
+
+
+
+
+/* === Верхняя панель === */
+.top-panel {
+  background: #fff;
+  border-bottom: 2px solid #008000;
+  padding: 10px 0;
+}
+
+.top-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Левая часть */
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-logo {
+  width: 90px;
+  height: auto;
+}
+
+.top-contacts p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #006600;
+  font-size: 14px;
+}
+
+.top-contacts img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Центр: версия для слабовидящих и поиск */
+.top-center {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.accessibility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #222;
+  font-size: 15px;
+}
+
+.accessibility img {
+  width: 22px;
+  height: 22px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 30px;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 220px;
+}
+
+.search-form button {
+  background: #008000;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Правая часть */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Адаптация */
+@media (max-width: 900px) {
+  .top-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top-center, .top-right {
+    justify-content: flex-start;
+  }
+}
+
+
+
+/* --- Правый блок --- */
+.sidebar-block {
+  background: none; /* убираем белый фон */
+  padding: 0; /* убираем внутренние отступы */
+  margin-bottom: 20px;
+  box-shadow: none; /* убираем тень у самого блока */
+  border-radius: 0;
+}
+
+/* Заголовок блока */
+.sidebar-block h3 {
+  background: #f8f8f8; /* лёгкий светлый фон для разделения */
+  color: #006600;
+  font-size: 18px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-left: 4px solid #009933; /* тонкий зелёный акцент */
+}
+
+/* Список ссылок */
+.sidebar-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Каждый элемент */
+.sidebar-block li {
+  margin-bottom: 8px;
+}
+
+/* Ссылка */
+.sidebar-block a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #004400;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+/* Эффект при наведении */
+.sidebar-block a:hover {
+  background: #eef8ee;
+  color: #008000;
+}
+
+/* Иконки */
+.sidebar-block img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+
+
+
+/* Таблица */
+.table-wrapper {
+  overflow-x: auto; /* чтобы на мобиле не ломалось */
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.schedule-table th {
+  background: #f1f1f1;
+  text-align: left;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.schedule-table td {
+  padding: 15px;
+  border-top: 1px solid #e5e5e5;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.schedule-table tr:hover {
+  background: #f9f9f9;
+}
+
+.schedule-table td:first-child {
+  font-weight: bold;
+}
+
+.table-note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Картинка */
+.fullwidth-images {
+  width: 100%;        /* контейнер на всю ширину */
+  margin: 0;          /* обнуляем отступы */
+  padding: 0;
+}
+
+.fullwidth-images img {
+  width: 100%;        /* картинка на всю ширину родителя */
+  height: auto;       /* сохраняем пропорции */
+  display: block;     /* убираем лишние пробелы */
+  margin: 0;
+  padding: 0;
+}
