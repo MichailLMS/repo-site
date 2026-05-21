@@ -557,3 +557,22 @@ flex-direction: column;
   font-size: 14px;
   color: #555;
 }
+
+
+
+
+/* Картинки */
+.fullwidth-images {
+  text-align: center;
+  width: 70%;        /* контейнер на всю ширину */
+  margin: auto;          /* обнуляем отступы */
+  padding: 0;
+}
+
+.fullwidth-images img {
+  width: 100%;        /* картинка на всю ширину родителя */
+  height: auto;       /* сохраняем пропорции */
+  display: block;     /* убираем лишние пробелы */
+  margin: 0 auto;
+  padding: 0;
+}
