@@ -45,9 +45,18 @@ body {
 
 /* Скрываем верхнее меню на маленьких экранах */
 @media (max-width: 900px) {
-    .navbar {
-        display: none !important;
-    }
+  .menu {
+    gap: 6px;
+    padding: 8px;
+  }
+  .menu a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .submenu a {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -55,9 +64,10 @@ body {
 .menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* разрешаем перенос строк */
   list-style: none;
-  gap: 50px;
-  padding: 10px 0;
+  gap: 10px;
+  padding: 10px;
 }
 
 /* Стиль ссылок верхнего меню */
