@@ -56,7 +56,6 @@ body {
   .submenu a {
     font-size: 14px;
   }
-
 }
 
 
@@ -432,13 +431,22 @@ flex-direction: column;
 }
 
 /* Адаптация */
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .top-container {
     flex-direction: column;
     align-items: flex-start;
   }
   .top-center, .top-right {
     justify-content: flex-start;
+  }
+  .top-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .top-contacts p {
+    justify-content: flex-start;
+    font-size: 16px;
   }
 }
 
