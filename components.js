@@ -87,6 +87,7 @@
         <li><a href="${R}Information/ProvisionServicesRentAgreement/index.html">Оказание социальных услуг на основании договора ренты</a></li>
         <li><a href="${R}Information/Post-BoardingSupport/index.html">Постинтернатное сопровождение лиц из числа детей-сирот и детей, оставшихся без попечения родителей</a></li>
         <li><a href="${R}Information/GuardianshipTrusteeship/index.html">Опека и попечительство</a></li>
+        <li><a href="${R}Information/IdentificationLargeFamily/index.html">Удостоверение многодетной семьи</a></li>
         <li><a href="${R}Information/Projects/index.html">Проекты</a></li>
         <li><a href="${R}Information/SocialWorker/index.html">Страничка социального работника</a></li>
         <li><a href="${R}Information/SocialBoardingHouses/index.html">Социальные пансионаты</a></li>
