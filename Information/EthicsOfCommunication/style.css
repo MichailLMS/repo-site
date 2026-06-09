@@ -602,13 +602,13 @@ flex-direction: column;
 
 
 
-.main-article a {
+.portal-link {
   text-decoration: none;
   color: #000000;
   font-size: 14px;
 }
 
-.main-article a:hover {
+.portal-link:hover {
   color: #006600;
 }
 

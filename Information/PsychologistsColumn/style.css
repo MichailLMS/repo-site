@@ -683,3 +683,18 @@ flex-direction: column;
 .main-article ul ul ul {
   list-style-type: square;
 }
+
+
+
+
+/* Ссылки */
+.custom-link {
+  text-decoration: none; /* убираем подчеркивание */
+  color: black;
+  transition: color 0.3s ease; /* плавный переход */
+  font-size: 16px;
+}
+
+.custom-link:hover {
+  color: #006100;
+}

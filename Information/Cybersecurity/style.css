@@ -603,7 +603,7 @@ flex-direction: column;
 
 
 /* Ссылки в тексте (основной контент) */
-.main-article a {
+.portal-link {
   color: #000000; /* фирменный зелёный */
   text-decoration: none;
   font-weight: 500;
@@ -612,7 +612,7 @@ flex-direction: column;
 }
 
 /* При наведении */
-.main-article a:hover {
+.portal-link:hover {
   color: #008000;
 }
 
