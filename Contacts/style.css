@@ -630,3 +630,45 @@ flex-direction: column;
     color: green;
     transition: 0.3s;
 }
+
+
+.contact-item {
+    margin-top: 20px;
+}
+
+.contact-item p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    color: green;
+    transition: 0.3s;
+}
+
+
+.contact-card {
+    margin-top: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    color: green;
+    transition: 0.3s;
+}

@@ -594,27 +594,15 @@ flex-direction: column;
 
 
 
-.main-article a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 14px;
+.portal-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
 }
 
-.main-article a:hover {
-  color: #006600;
+.portal-link:hover {
+    color: #006600;
 }
-
-
-.main-article .link {
-  text-decoration: none;
-  color: #000000;
-  font-size: 22px;
-}
-
-.main-article .link:hover {
-  color: #006600;
-}
-
 
 
 
