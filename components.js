@@ -17,7 +17,7 @@
         <div class="top-left">
           <img src="${R}img/logo.png" alt="Логотип" class="top-logo">
             <div class="top-contacts">
-              <p><img src="${R}img/phone-icon.png" alt=""><a href="tel:+3750236225223">+375 (0236) 22-52-23</a></p>
+              <p><img src="${R}img/phone-icon.png" alt=""><a href="tel:+375236225223">8 (0236) 22-52-23</a></p>
               <p><img src="${R}img/mail-icon.png" alt=""><a href="mailto:tcsonmr@mail.gomel.by">tcsonmr@mail.gomel.by</a></p>
             </div>
         </div>
@@ -118,7 +118,7 @@
     <div class="sidebar-contacts">
       <h3>Контакты</h3>
       <p> &nbsp; </p>
-      <p><a href="tel:+3750236225223">+375 (0236) 22-52-23</a> — Приемная</p>
+      <p><a href="tel:+375236225223">8 (0236) 22-52-23</a> — Приемная</p>
       <p><a href="tel:+375298537600">+375 (29) 853-76-00</a>
         — Телефон круглосуточного доступа в "кризисную" комнату</p>
       <p><a href="mailto:tcsonmr@mail.gomel.by">tcsonmr@mail.gomel.by</a>
