@@ -751,3 +751,40 @@ flex-direction: column;
 
 
 
+.contact-card {
+    margin-top: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    color: green;
+    transition: 0.3s;
+}
+
+
+
+
+
+/* Ссылки в тексте (основной контент) */
+.portal-link {
+  color: #000000; /* фирменный зелёный */
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* При наведении */
+.portal-link:hover {
+  color: #008000;
+}
