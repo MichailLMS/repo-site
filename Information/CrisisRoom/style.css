@@ -643,3 +643,44 @@ flex-direction: column;
     color: green;
     transition: 0.3s;
 }
+
+
+
+
+
+/* СПИСКИ, ОБЫЧНЫЕ И ВЛОЖЕННЫЕ */
+
+/* основной список */
+.main-article ul {
+  padding-left: 20px;
+}
+
+.main-article li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* вложенный список */
+.main-article ul ul {
+  margin-top: 8px;
+  padding-left: 25px; /* сильнее сдвигаем */
+  border-left: 2px solid #e0e0e0; /* линия слева */
+}
+
+/* элементы вложенного списка */
+.main-article ul ul li {
+  margin-bottom: 6px;
+}
+
+/* разные маркеры для уровней */
+.main-article ul {
+  list-style-type: disc;
+}
+
+.main-article ul ul {
+  list-style-type: circle;
+}
+
+.main-article ul ul ul {
+  list-style-type: square;
+}
