@@ -22,10 +22,10 @@
             </div>
         </div>
 
-        <div class="top-right">
+        <!-- <div class="top-right">
           <img src="${R}img/banner1.png" alt="Площадка для общения" class="banner">
           <img src="${R}img/banner2.png" alt="Гос. поддержка инвалидов" class="banner">
-        </div>
+        </div> -->
       </div>
     </header>
   `);
@@ -92,7 +92,6 @@
         <li><a href="${R}Information/SocialWorker/index.html">Страничка социального работника</a></li>
         <li><a href="${R}Information/SocialBoardingHouses/index.html">Социальные пансионаты</a></li>
         <li><a href="${R}Information/SouvenirProducts/index.html">Сувенирная продукция</a></li>
-        <li><a href="${R}Information/Volunteers/index.html">Ищем волонтёров</a></li>
         <li><a href="${R}Information/PaymentOneFinancial/index.html">Выплата единовременной материальной помощи к учебному году</a></li>
         <li><a href="${R}Information/AdministrativeProcedures/index.html">Административные процедуры</a></li>
         <li><a href="${R}Information/SocialAdvertising/index.html">Социальная реклама</a></li>
@@ -119,8 +118,6 @@
       <h3>Контакты</h3>
       <p> &nbsp; </p>
       <p><a href="tel:+375236225223">8 (0236) 22-52-23</a> — Приемная</p>
-      <p><a href="tel:+375298537600">+375 (29) 853-76-00</a>
-        — Телефон круглосуточного доступа в "кризисную" комнату</p>
       <p><a href="mailto:tcsonmr@mail.gomel.by">tcsonmr@mail.gomel.by</a>
         — только для деловой переписки</p>
       <p>247760, г. Мозырь, пл. Горького, д. 7</p>
