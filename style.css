@@ -683,3 +683,41 @@ flex-direction: column;
     color: green;
     transition: 0.3s;
 }
+
+
+
+
+
+/* Картинки */
+.main-image {
+  text-align: center;
+  width: 100%;        /* контейнер на всю ширину */
+  margin: auto;          /* обнуляем отступы */
+  padding: 0;
+}
+
+.main-image img {
+  width: 100%;        /* картинка на всю ширину родителя */
+  height: auto;       /* сохраняем пропорции */
+  display: block;     /* убираем лишние пробелы */
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+/* Картинки */
+.fullwidth-images {
+  text-align: center;
+  width: 35%;        /* контейнер на всю ширину */
+  margin: auto;          /* обнуляем отступы */
+  padding: 0;
+}
+
+.fullwidth-images img {
+  width: 100%;        /* картинка на всю ширину родителя */
+  height: auto;       /* сохраняем пропорции */
+  display: block;     /* убираем лишние пробелы */
+  margin: 0 auto;
+  padding: 0;
+}
